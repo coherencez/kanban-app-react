@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Notes from './components/Notes'
+import App from './components/App'
 
 
 if(process.env.NODE_ENV !== 'production') {
@@ -8,6 +8,6 @@ if(process.env.NODE_ENV !== 'production') {
 }
 
 ReactDOM.render(
-  <Notes />,
+  <App />,
   document.getElementById('app')
 );
