@@ -42,10 +42,11 @@ export default class App extends React.Component {
     //
     // Libraries, such as Immutable.js, go a notch further.
     this.setState({
-      notes: this.state.notes.concat([{
-        id: uuid.v4(),
-        task: 'New task'
-      }])
-    })
+      notes: [...this.state.notes,
+        {
+          id: uuid.v4(),
+          task: 'New Task'
+        }
+    ]})
   }
 }
